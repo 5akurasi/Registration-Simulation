@@ -1,0 +1,166 @@
+body {
+    background-image: url('https://i.gifer.com/5Gum.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.regzone {
+    width: 275px;
+    height: 375px;
+    background-color: rgb(83, 83, 83);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgb(48, 48, 48);
+}
+
+.reg {
+    top: calc(50% + 150px);
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 225px;
+    height: 42px;
+    font: italic small-caps bold 16px/1 cursive;
+    font-size: 25px;
+    background-color: rgb(61, 61, 61);
+    border: none;
+    border-radius: 5px;
+}
+
+.reg:hover {
+    background-color: rgb(37, 37, 37);
+}
+
+.reg:active {
+    background-color: rgb(58, 58, 58);
+}
+
+.email {
+    top: calc(50% - 125px);
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 225px;
+    height: 42px;
+    font: italic small-caps bold 16px/1 cursive;
+    font-size: 25px;
+    background-color: rgb(143, 143, 143);
+    border: none;
+    border-radius: 5px;
+}
+
+.email::placeholder {
+    color: rgb(46, 46, 46);
+}
+
+.nickname {
+    top: calc(50% - 75px);
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 225px;
+    height: 42px;
+    font: italic small-caps bold 16px/1 cursive;
+    font-size: 25px;
+    background-color: rgb(143, 143, 143);
+    border: none;
+    border-radius: 5px;
+}
+
+.nickname::placeholder {
+    color: rgb(46, 46, 46);
+}
+
+.password {
+    top: calc(50% - 25px);
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 225px;
+    height: 42px;
+    font: italic small-caps bold 16px/1 cursive;
+    font-size: 25px;
+    background-color: rgb(143, 143, 143);
+    border: none;
+    border-radius: 5px;
+}
+
+.password::placeholder {
+    color: rgb(46, 46, 46);
+}
+
+.account {
+    top: 1%;
+    right: 1%;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url("icon.png");
+    border-radius: 5px;
+    background-size: cover;
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-color: rgb(214, 230, 245);
+    width: 75px;
+    height: 125px;
+    top: calc(1% + 66px);
+    right: calc(1% - 7px);
+    position: absolute;
+    border-radius: 5px;
+    display: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px;
+}
+
+.account:hover + .container {
+    display: block;
+}
+
+.name, .mail {
+    font: italic small-caps bold 15px/2 cursive;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+input {
+    cursor: default;
+}
+
+input:focus {
+    cursor: text;
+}
+
+.sitename {
+    top: calc(0% + 45px);
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: rgb(248, 178, 28);
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 50px;
+    animation: rotateText 2s ease-in-out infinite;
+}
+
+@keyframes rotateText {
+    0% {
+        transform: translate(-50%, -50%) rotate(-9deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(9deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(-9deg);
+    }
+}
